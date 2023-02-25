@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .submit:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <form action="">
+        <p>Name:<br>
+        <input type="text" placeholder="My Tam" name="txtName" value=""size="20" maxlength="20"  required></p>
+        <p>Telephone Number:<br>
+        <input type="tel"  name="txtTel" value=""size="20" maxlength="20"  required></p>
+        <p>Email:<br>
+            <input type="email"  name="txtEmail" value=""size="20" maxlength="20"required ></p>
+        <p>Favorite Color:<br>
+        <input type="color" name="txtColor" value=""size="20" maxlength="20"  required></p>
+        <p>Date of Birth:<br>
+        <input type="date" name="txtDate" value="" size="20" maxlength="20" required ></p>
+        <input class="submit" type="submit" value="Submit" style="margin-top: 6px;">
+        
+    </form>
 </body>
-</html>
+</html>`
