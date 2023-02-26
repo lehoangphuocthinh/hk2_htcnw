@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <style>
+        .submit:hover {
+            cursor: pointer;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
     
+</head>
+
+<body style="margin-left: 15px;">
+    <form action="" >
+        <h1>Contact Us</h1>
+        <fieldset>
+            <legend style="margin-left: 10px;">Your message:</legend>
+            <table>
+                <tr>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend style="margin-left: 10px;">How you found us:</legend>
+            <table>
+                <p>How did you hear of us?
+                    <select name="" id="" style="margin-left: 8px;">
+                        <option value="">Google</option>
+                    </select>
+                </p>
+                <p>Newsletter
+                    <input type="checkbox" id="vehicle1" name="vehicle1" style="margin-left: 95px;">
+                    <label for="vehicle1">Ensure this box is checked if you would like to receive email
+                        updates</label><br>
+            </table>
+        </fieldset>
+        <input class="submit" type="Send message" value="Send message" style="margin-top: 6px;" size="10">
+        <fieldset>
+            <legend style="margin-left: 10px;">Contact Information:</legend>
+            <p>First name:
+                <input type="text" size="30">
+            </p>
+            <p>Last name:
+                <input type="text" size="30">
+            </p>
+            <p>E-mail:
+                <input type="email" size="30">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend style="margin-left: 10px;">Competition Question:</legend>
+            <p>How tall is the Eiffel Tower in Paris, France?</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">584 ft</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">784 ft</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">984 ft</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">1184 ft</label><br>
+        </fieldset>
+        <fieldset>
+            <legend style="margin-left: 10px;">Tiebreaker Question:</legend>
+            <p>In 25 words or less, say why you would like to win $10,000:</p>
+            <textarea name="" id="" cols="40" rows="10" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend style="margin-left: 10px;">Enter competition:</legend>
+            <input class="submit" type="Enter Competition" value="Enter Competition" size="12" style="margin-top: 8px;">
+        </fieldset>
+    </form>
 </body>
+
 </html>
