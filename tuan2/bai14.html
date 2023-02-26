@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .submit:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Contact Us</h1>
+    <p>Use the following from to send a message to Example cafe</p>
+    <form action="">
+        <p>Your email
+        <input type="email"  name="txtEmail" value=""size="20" maxlength="20"  style="margin-left: 95px;"></p>
+        <p style="display: inline-block;">Message</p>
+            <textarea name="" id="" cols="50" rows="10" style="margin-left: 110px; display: inline-block; vertical-align: middle;"></textarea >
+        <p>How did you hear of us? 
+            <select name="" id="" style="margin-left: 8px;">
+                <option value="" >Google</option>
+            </select></p>
+        <p>Newsletter
+            <input type="checkbox" id="vehicle1" name="vehicle1" style="margin-left: 95px;">
+            <label for="vehicle1">Ensure this box is checked if you would like to receive email updates</label><br>
+        <input class="submit" type="Send message" value="Send message" style="margin-top: 6px;">
+    </form>
 </body>
 </html>
