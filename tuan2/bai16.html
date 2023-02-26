@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .submit:hover {
+            cursor: pointer;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body style="margin-left: 15px;">
+    <form action="">
+        <h1>Travel reservation form</h1>
+        <br>
+        <p><b>* denotes mandotory</b></p>
+        <br>
+        <p>Full name*:</p>
+        <input placeholder="FirstName LastName" type="text" id="fullname" name="txtFullname" value="" size="20"
+            maxlength="20">
+        <p>Email address*:</p>
+        <input placeholder="EMAIL_ADDRESS" type="email" id="email" name="txtEmail" value="" size="20" maxlength="20">
+        <p>Select Tour Package*:</p>
+        <select name="txtpackage" id="Package">
+            <option value="Goa">Goa</option>
+        </select>
+        <p>Arrival date*:</p>
+        <input placeholder="m/d/y" type="datetime" id="date" name="txtDate" value="" size="20" maxlength="20">
+        <p>Number od persons*:</p>
+        <input placeholder="UNKNOWN_TYPE" type="tel" id="number" name="txtNumber" value="" size="20" maxlength="20">
+        <p>What would you want to avail?*</p>
+        <label for="">Boarding</label>
+        <input type="checkbox" id="Boarding" name="txtBoarding"><br>
+        <label for="">Fooding</label>
+        <input type="checkbox" id="Fooding" name="txtFooding"><br>
+        <label for="">Sight seeing</label>
+        <input type="checkbox" id="sight seeing" name="txtSightSeeing"><br>
+        <p>Discout Coupon code:</p>
+        <input placeholder="UNKNOWN_TYPE" type="text" id="code" name="txtCode" value="" size="20" maxlength="20">
+        <p>Terms and conditions*</p>
+        <input type="radio" id="agree" name="Terms">
+              <label for="html">I agree</label>
+            <input type="radio" id="disagree" name="Terms">
+              <label for="html">I disagree</label><br>
+        <input class="submit" type="Send message" value="Complete reservation"  size="15">
+
+    </form>
 </body>
+
 </html>
