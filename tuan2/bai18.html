@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .click:hover {
+            cursor: pointer;
+        }
+
+        /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } */
+    </style>
 </head>
 <body>
-    
+    <form action="">  
+        Please indicate your area of interest: <br>
+        <input type="text" list="tech">
+        <datalist id="tech">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+    </form>
 </body>
 </html>
