@@ -4,37 +4,34 @@
 }
 
 .wrapper {
-    height: 600px;
+    height: 585px;
     width: 1000px;
     margin: 8px;
-    border: 2px solid black;
     position: absolute;
+    background-image: linear-gradient(to top, #5da4ef, #6ecbec);
 }
 header {
-    height: 150px;
+    height: 50px;
     width: 1000px;
-    background-color: blanchedalmond;
     position: relative;
+    border-bottom: 5px dotted white ;
 }
 .menu {
     list-style: none;
     display: flex;
     width: 570px;
-    height: 45px;
+    height: 30px;
     border-radius: 10px;
     position: absolute;
-    top: 55px;
-    right: 0;
+    top: 12px;
+    left:  0;
 }
-.menu_item {
-    padding: 12px;
-    background-color: #3d73b1;
-    border-radius: 10px;
-}
+
 .menu_item a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-size: 20px;
 }
 .menu li:hover {
     background-color: #00f269;
@@ -49,8 +46,8 @@ header {
     position: absolute;
     background-color: #3d73b1;
     list-style: none;
-    margin-left: -12px;
-    top: 45px;
+    margin-left: 0;
+    top: 30px;
 }
 .sub_menu li {
     height: 30px;
@@ -61,21 +58,30 @@ header {
 }
 .content{
     display: flex;
-    height: 300px;
+    height: 460px;
     width: 1000px;
-    background-color: rgb(58, 158, 107);
+    
     
 }
 .left_content{
-    background-color: yellow;
+    
     width: 50%;
 }
 .right_content{
-    background-color: palevioletred;
+    
     width: 50%;
 }
 footer{
+    height: 75px;
     width: 1000px;
-    height: 150px;
-    background-color: #483D8B  ;
+   
+    border-top: 5px dotted white;
+}
+footer p{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 1000px;
+    bottom: 10px;
 }
