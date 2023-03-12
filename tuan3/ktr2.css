@@ -16,6 +16,16 @@ header {
     position: relative;
     border-bottom: 5px dotted white ;
 }
+header p{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    right: 20px;
+    top: 8px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 15px blue;
+}
 .menu {
     list-style: none;
     display: flex;
@@ -26,7 +36,6 @@ header {
     top: 12px;
     left:  0;
 }
-
 .menu_item a {
     color: white;
     font-weight: bold;
@@ -34,7 +43,7 @@ header {
     font-size: 20px;
 }
 .menu li:hover {
-    background-color: #00f269;
+    background-color: #5da4ef;
 }
 
 .menu li:hover .sub_menu {
@@ -47,29 +56,70 @@ header {
     background-color: #3d73b1;
     list-style: none;
     margin-left: 0;
-    top: 30px;
+    top: 25px;
+    z-index: 1;
 }
 .sub_menu li {
     height: 30px;
 }
-
 .sub_menu li:hover {
-    background-color: #00f269;
+    background-color: #5da4ef;
 }
 .content{
     display: flex;
     height: 460px;
     width: 1000px;
-    
-    
 }
 .left_content{
-    
+    color: white;
     width: 50%;
+}
+.left_content_1 {
+    text-align: justify;
+    width: 450px;
+    left: 10px;
+    position: absolute;
+}
+.left_content_2{
+    position: absolute;
+    top: 250px;
+}
+.table{
+    left: 50px;
+    position: absolute;
+    width: 400px;
+    top: -25px;
+}
+.table th{
+    text-align: left;
+    width: 200px;
+}
+.table input{
+    border-radius: 5px;
+    border: 1px solid blue;
 }
 .right_content{
     
     width: 50%;
+}
+.right_content img{
+    width: 420px ;
+    height: 290px ;
+    top: 90px;
+    position: absolute;
+}
+.right_content h1{
+    color: blue;
+    text-shadow: 3px 3px blue;
+    letter-spacing: 2px;
+    bottom: 150px;
+    right: 220px;
+    position: absolute;
+}.right_content h2{
+    color: blue;
+    position: absolute;
+    bottom: 125px;
+    right: 60px;
 }
 footer{
     height: 75px;
@@ -84,4 +134,7 @@ footer p{
     text-align: center;
     width: 1000px;
     bottom: 10px;
+}
+.Submit1:hover{
+    cursor: pointer;
 }
