@@ -10,83 +10,91 @@
     width: 750px;
     margin: 10px;
     border: 1px solid black;
-    grid-template-areas: 
-    "header header"
-    "menu menu"
-    "backgroup backgroup"
-    "sign links"
-    "sign more"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "menu menu"
+        "backgroup backgroup"
+        "sign links"
+        "sign more"
+        "footer footer";
     grid-template-rows: 60px 30px 160px 1fr 1fr 50px;
     grid-template-columns: 1fr 215px;
 }
+
 header {
     grid-area: header;
     background-color: #ac4b16;
     width: 750px;
     position: relative;
 }
-header h1{
+
+header h1 {
     position: relative;
     left: 15px;
     top: 8px;
-    color: #808000; 
-    text-shadow: 5px 3px 4px white;
+    color: #808000;
+    text-shadow: -5px -5px 4px white;
     font-size: 30px;
 }
-.menu{
+
+.menu {
     grid-area: menu;
     width: 500px;
     list-style: none;
     background-color: white;
     display: flex;
 }
+
 .menu_item {
     padding: 8px;
+    position: relative;
 }
-.menu_item a{
+
+.menu_item a {
     color: #ac4b16;
     text-decoration: none;
 }
-.menu li:hover{
+
+.menu li:hover {
     background-color: #48a846;
 }
-.menu li:hover .sub_menu{
+
+.menu li:hover .sub_menu {
     display: block;
 }
-.sub_menu{
-  color: white;
-  display: none;
-  position: absolute;
-  background-color:  white;
-  list-style: none;
-  margin-left: -8px;
-  top: 90px;
-   
+.sub_menu {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    left: 0;
+    top: 100%;
+
 }
-.sub_menu li{
-    height: 30px;
+.sub_menu1{
+    padding: 5px;
 }
-.sub_menu li:hover{
-    background-color: #48a846;
-}
-.backgroup{
+.backgroup {
     grid-area: backgroup;
     width: 750px;
 }
-.sign{
+
+.sign {
     grid-area: sign;
     height: 450px;
     width: 535px;
 }
-.sign h2{
+
+.sign h2 {
     color: #b5841a;
     position: relative;
     left: 10px;
     letter-spacing: 2px;
     word-spacing: 2px;
 }
-.sign p{
+
+.sign p {
     font-style: italic;
     position: relative;
     color: #bea554;
@@ -94,23 +102,27 @@ header h1{
     width: 425px;
     word-spacing: 2px;
 }
-.sign form{
-    
+
+.sign form {
+
     height: 260px;
     position: relative;
     width: 425px;
 }
-.input{
+
+.input {
     margin-top: 15px;
     border: none;
     border-bottom: 1px solid black;
 }
-.sign form input{
+
+.sign form input {
     position: relative;
     height: 30px;
-    
+
 }
-.sign form button{
+
+.sign form button {
     position: relative;
     width: 100px;
     height: 30px;
@@ -120,7 +132,8 @@ header h1{
     background-color: #808000;
     color: black;
 }
-.links{
+
+.links {
     position: absolute;
     top: 20px;
     grid-area: links;
@@ -128,64 +141,14 @@ header h1{
     height: 200px;
     background-color: #faebd7;
 }
-.more{
+
+.more {
     grid-area: more;
     width: 215px;
 
 }
-footer{
+
+footer {
     grid-area: footer;
     width: 750px;
-    background-color: green;
 }
-/* 
-
-
-.content {
-    height: 610px;
-    width: 750px;
-}
-.c1{
-    height: 160px;
-    width: 750px;
-}
-.c2{
-    display: flex;
-}
-.left_content {
-    width: 540px;
-    height: 450px;
-}
-.left_content h2{
-    position: absolute;
-    color: #b28016;
-    left: 10px;
-}
-.left_content p{
-    font-weight: bold;
-    font-style: italic;
-    line-height: 1.5;
-    top: 40px;
-    position: relative;
-    color: #bdab5f;
-    left: 20px;
-    width: 430px;
-}
-.right_content {
-    background-color: palevioletred;
-    width: 210px;
-    height: 450px;
-}
-.right_content_1{
-    height: 185px;
-    background-color: #faebd7;
-}
-.right_content_2{
-    height: 265px;
-    background-color: white;
-}
-footer {
-    width: 750px;
-    height: 50px;
-    background-color: #483D8B;
-} */

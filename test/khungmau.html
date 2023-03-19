@@ -13,45 +13,51 @@
         }
 
         .wrapper {
-            height: 600px;
-            width: 1000px;
-            margin: 8px;
-            border: 2px solid black;
-            position: absolute;
-        }
-
-        header {
-            height: 150px;
-            width: 1000px;
-            background-color: blanchedalmond;
             position: relative;
+            display: grid;
+            height: 750px;
+            width: 750px;
+            margin: 10px;
+            border: 1px solid black;
+            grid-template-areas:
+                "header header"
+                "menu menu"
+                "left right"
+                "footer footer";
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        /***** HEADER *****/
+        header {
+            grid-area: header;
+            background-color: aqua;
+            width: 100%;
         }
 
+        /***** MENU *****/
         .menu {
+            grid-area: menu;
+            height: 100%;
+            width: 100%;
             list-style: none;
+            background-color: yellowgreen;
             display: flex;
-            width: 570px;
-            height: 45px;
-            border-radius: 10px;
-            position: absolute;
-            top: 55px;
-            right: 0;
+
         }
 
         .menu_item {
-            padding: 12px;
-            background-color: #3d73b1;
-            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+            border: 1px solid black;
         }
 
         .menu_item a {
-            color: white;
-            font-weight: bold;
+            color: #ac4b16;
             text-decoration: none;
         }
 
         .menu li:hover {
-            background-color: #00f269;
+            background-color: #48a846;
         }
 
         .menu li:hover .sub_menu {
@@ -59,45 +65,36 @@
         }
 
         .sub_menu {
-            color: white;
             display: none;
             position: absolute;
-            background-color: #3d73b1;
+            background-color: white;
             list-style: none;
-            margin-left: -12px;
-            top: 45px;
+            left: 0;
+            top: 100%;
         }
 
-        .sub_menu li {
-            height: 30px;
+        .sub_menu1 {
+            padding: 5px;
         }
 
-        .sub_menu li:hover {
-            background-color: #00f269;
-        }
-
-        .content {
-            display: flex;
-            height: 300px;
-            width: 1000px;
-            background-color: rgb(58, 158, 107);
-
-        }
-
-        .left_content {
-            background-color: yellow;
-            width: 50%;
-        }
-
-        .right_content {
+        /***** CONTENT *****/
+        .left {
+            grid-area: left;
             background-color: palevioletred;
-            width: 50%;
+            width: 100%;
         }
 
+        .right {
+            grid-area: right;
+            background-color: orange;
+            width: 100%;
+        }
+
+        /***** FOOTER *****/
         footer {
-            width: 1000px;
-            height: 150px;
-            background-color: #483D8B;
+            grid-area: footer;
+            background-color: green;
+            width: 100%;
         }
     </style>
 </head>
@@ -105,25 +102,28 @@
 <body>
     <div class="wrapper">
         <header>
-            <ul class="menu">
-                <li class="menu_item"><a href="">Home</a></li>
-                <li class="menu_item"><a href="">Promotion</a></li>
-                <li class="menu_item"><a href="">Gift Baskets</a></li>
-                <li class="menu_item"><a href="">Flower Service</a>
-                    <ul class="sub_menu">
-                        <li><a class="sub_menu1" href="">Flower for Wedding</a></li>
-                        <li><a class="sub_menu1" href="">Flower for Conference</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item"><a href="">About</a></li>
-            </ul>
+            header
         </header>
-        <div class="content">
-            <div class="left_content"></div>
-            <div class="right_content"></div>
+        <ul class="menu">
+            <li class="menu_item"><a href="">Home</a></li>
+            <li class="menu_item"><a href="">About </a></li>
+            <li class="menu_item"><a href="">Products</a></li>
+            <li class="menu_item"><a href="">Services</a>
+                <ul class="sub_menu">
+                    <li class="sub_menu1"><a href="">Our services</a></li>
+                    <li class="sub_menu1"><a href="">Third party sevrices</a></li>
+                </ul>
+            </li>
+            <li class="menu_item"><a href="">Order</a></li>
+        </ul>
+        <div class="left">
+            left
+        </div>
+        <div class="right">
+            right
         </div>
         <footer>
-
+            footer
         </footer>
     </div>
 </body>
