@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cau hinh trang -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var i=1;
+            i++;
+            $("#btnSV").click(function(){
+                $("myModal").modal();
+            })
+        })
+    </script>
+    <style>
+        [class*="col-"]{
+            padding: 0px;
+            box-sizing: content-box;
+        }
+        li{width: 160px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-8 col-sm-8">
+                <img src="../ONTAP_KIEMTRA/img/banner.png" alt="" width="1240px" height="200px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12">
+                <ul class="navbar navbar-nav navbar-expand-md col-md-12 col-12 col-sm-12">
+                    <li class="nav-item alter-dark text-md-center"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item alter-dark text-md-center" id="btnSV">
+                        <a href="#" class="nav-link">SERVICES</a></li>
+                    <li class="nav-item alter-dark text-md-center"><a href="#" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item alter-dark text-md-center"><a href="#" class="nav-link">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a href="" class="navbar-brand">Navbar</a>
+                <button class="navbar-toggler" type="button"  data-toggler="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="navber-item">
+                            <a href="#" class="nav-link">Link</a>
+                        </li>
+                        <li class="navber-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggler="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="#" class="dropdown-item">Active</a>
+                                <a href="#" class="dropdown-item">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="navber-item">
+                            <a href="#" class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="../ONTAP_KIEMTRA/img/aside.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-7">
+                <table class="table table-bordered table-primary table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ho ten</th>
+                            <th>Ngay sinh</th>
+                            <th>Lop</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>Le Hoang Phuoc Thinh</th>
+                            <th>10/12/2003</th>
+                            <th>DH17</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Le Thi My Tam</th>
+                            <th>06/09/2003</th>
+                            <th>DH16</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Phan Thanh Hai</th>
+                            <th>21/01/2003</th>
+                            <th>DH15</th>
+                        </tr>
+                    </tbody>
+                    <tfooter>
+
+                    </tfooter>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="modal fade" role="dialog" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Danh sach dang ky</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control-plaintext" id="staticEmail"
+                                        value="email@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
